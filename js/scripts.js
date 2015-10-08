@@ -1,5 +1,5 @@
 $(document).ready(function() {
-$("#blanks form").submit(function(event) {
+$("#blanks").submit(function(event) {
   var foodInput = $("input#food").val();
   var restuarantInput = $("input#restaurant").val();
   var animalInput = $("input#animal").val();
