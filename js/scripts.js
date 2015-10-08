@@ -1,20 +1,20 @@
 $(document).ready(function() {
-$("blanks").submit(function(event) {
-  var food = $("input#food").val();
-  var restuarant = $("input#restaurant").val();
-  var animal = $("input#animal").val();
-  var country = $("input#country").val();
-  var movie = $("input#movie").val();
-  var tvshow = $("input#tvshow").val();
+$("#blanks form").submit(function(event) {
+  var foodInput = $("input#food").val();
+  var restuarantInput = $("input#restaurant").val();
+  var animalInput = $("input#animal").val();
+  var countryInput = $("input#country").val();
+  var movieInput = $("input#movie").val();
+  var tvshowInput = $("input#tvshow").val();
 
-  $(".food").text(food);
-  $(".restuarant").text(restaurant);
-  $(".animal").text(animal);
-  $(".country").text(country);
-  $(".movie").text(movie);
-  $(".tvshow").text(tvshow);
+  $(".food").text(foodInput);
+  $(".restuarant").text(restaurantInput);
+  $(".animal").text(animalInput);
+  $(".country").text(countryInput);
+  $(".movie").text(movieInput);
+  $(".tvshow").text(tvshowInput);
 
-  $("#favorite-things").show();
+  $("#list").show();
 
   event.preventDefault();
   });
